@@ -1,0 +1,4 @@
+## Interface: 50504
+## Title: Visaren
+## Notes: Addon show if some spells is active
+Visaren.lua
