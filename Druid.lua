@@ -1,6 +1,6 @@
 spellNamesDruid = {
     "Berserk",
-    "Survival Insticts",
+    "Survival Instincts",
     "Barkskin",
     "Savage Defense",
     "Might of Ursoc",
