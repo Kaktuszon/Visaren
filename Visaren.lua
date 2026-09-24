@@ -1,18 +1,19 @@
-local spellNames = {
-    "Expanded Mind",
-    "Toxic Power",
-    "Jade Spirit",
-    "Dark Soul: Misery",
-    "Burning Rush",
-}
-local spellIcons = {
-    GetSpellTexture(146046),
-    GetSpellTexture(148906),
-    GetSpellTexture(104993),
-    GetSpellTexture(77801),
-    GetSpellTexture(111400)
-}
-local MAX_FRAMES_COUNT = #spellNames
+local _, currentClass, classID = UnitClass("player")
+
+local spellNames = {}
+local spellIcons = {}
+
+-- Set variables for selected class
+local MAX_FRAMES_COUNT = 0
+if currentClass == "WARLOCK" then
+    MAX_FRAMES_COUNT = #spellNamesWarlock
+    spellNames = spellNamesWarlock
+    spellIcons = spellIconsWarlock
+elseif currentClass == "DRUID" then
+    MAX_FRAMES_COUNT = #spellNamesDruid
+    spellNames = spellNamesDruid
+    spellIcons = spellIconsDruid
+end
 
 -- Specific for Burning Rush
 local burningRushName = "Burning Rush"
