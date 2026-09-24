@@ -1,4 +1,6 @@
 ## Interface: 50504
 ## Title: Visaren
 ## Notes: Addon show if some spells is active
+Warlock.lua
+Druid.lua
 Visaren.lua
